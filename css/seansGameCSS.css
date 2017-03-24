@@ -1,0 +1,64 @@
+/* =================================
+  Base Element Styles
+====================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*no bullet points in list*/
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+body {
+text-align: center;
+font-family: 'VT323', monospace;
+
+}
+
+.main-header,
+.main-footer {
+  background-color: red;
+  color: black;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+}
+
+.main-footer {
+	padding: 20px;
+	margin-top: auto;
+}
+
+.main-text {
+	font-size: 2.5em;
+}
+/*
+Flexbox
+*/
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}

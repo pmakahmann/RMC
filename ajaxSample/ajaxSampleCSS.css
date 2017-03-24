@@ -1,0 +1,208 @@
+/* =================================
+  Base Element Styles
+====================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-header {
+  background-color: darkred;
+  color: white;
+  height: auto;
+  margin-top: 0;
+}
+
+.main-logo a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+  color: white;
+}
+
+.main-logo a {
+	font-size: 2em;
+}
+
+.main-nav a {
+	font-size: 1.9em;
+}
+
+.main-text {
+	float: left;
+	width: 70%;
+	background-color: tan;
+	padding-bottom: 30px;
+}
+
+.main-text p {
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.7em;
+	font-style: italic;
+	font-weight: bold;
+	color: darkred;
+	text-decoration: none;
+
+}
+
+.intro {
+	text-align: center;
+	font-size: 1.7em;
+	margin: 50px 15% 0;
+}
+
+.selected,
+.main-header a:hover {
+	transform: scale(1.06);
+}
+
+/* =================================
+  Patient Intake Form
+==================================== */
+
+/*Styling altered from https://www.sitepoint.com/style-web-forms-css/ to fit my needs*/
+
+
+.main-text form {
+	background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin: auto;
+position: relative;
+width: 500px;
+height: auto;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: darkred;
+text-decoration: none;
+border-radius: 10px;
+padding: 10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#patientIntake input {
+  width: 250px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#patientIntake input[type=checkbox] {
+	width: 25px;
+	box-shadow: none;
+}
+
+#patientIntake input[type=button] {
+	color: white;
+	background-color: darkred;
+	margin-top: 15px;
+	width: 400px;
+}
+
+#patientIntake input[type=button]:hover {
+	transform: scale(1.04);
+}
+
+
+
+
+/* =================================
+Patient In Office Status Bar
+==================================== */
+
+#patientList {
+	float: right;
+	width: 20%;
+	margin-right: 10%;
+}
+
+#patientList li{
+	margin: 20px 0 10px;
+	font-size: 1.4em;
+}
+
+ul.bulleted {
+  margin-bottom: 20px;
+}
+
+ul.bulleted li {
+  padding-left: 40px;
+}
+ul.bulleted li:before {
+  position: relative;
+  top: 0;
+  left: 0;
+	margin-right: 10px;
+  color: white;
+  font-size: 1em;
+  padding: 3px 2px 2px;
+  border-radius: 2px;
+  text-align:center;
+  width: 25px;
+}
+
+ul.bulleted .in {
+  color: #5A6772;
+}
+ul.bulleted .in:before {
+  content: "IN";
+  background-color: #5fcf80;
+}
+ul.bulleted .out {
+  color: #A7B4BF;
+}
+ul.bulleted .out:before {
+  content: "OUT";
+  background-color: #ed5a5a;
+}
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+    text-align: center;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav {
+    float: right;
+  }
+	.main-nav li {
+		float: left;
+	}
+}
+
+
+@media (min-width: 1025px) {
+  .main-header{
+    flex-direction: row;
+    justify-content: space-between;
+    /*allows separation between .name and .main-nav*/
+  }
+}

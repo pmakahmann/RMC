@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rogue Middle Child Designs</title>
+    <link rel="stylesheet" href="ajaxSampleCSS.css">
+  </head>
+
+  <body>
+    <div class="main-header">
+      <div class="main-logo">
+        <h2><a href="ajaxSample.html">Dr. AJAX Office</a></h2>
+      </div>
+      <div class="main-nav">
+        <ul>
+          <li><a href="ajaxSamplePatientIntake.html" class="selected">Patient Intake</a></li>
+          <li><a href="#">Patient Allergies</a></li>
+          <li><a href="#">Patient Rx</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+      <div class="main-text">
+        <p>Initial Patient Data Intake</p>
+
+        <form id="patientIntake">
+          First Name:<input type="text" name="fname" value="">
+          Last Name:<input type="text" name="lname" value="">
+          Male<input type="checkbox" name="sexm" value="">
+          Female<input type="checkbox" name="sexf" value="">
+          Date of Birth<input type="date" name="dob" value="">
+          Height (in):<input type="number" name="height" value="">
+          Weight (lbs):<input type="number" name="weight" value="">
+          Pulse:<input type="number" name="pulse" value="">
+          Blood Pressure:<input type="number" name="bp" value="">
+          <input type="button" name="submit" value="Submit">
+        </form>
+      </div>
+
+      <div id="patientList">
+      </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="patientStatus.js" type="text/javascript"></script>
+
+    <!--
+    $(document).ready(function () {
+      $.getJSON('https://api.myjson.com/bins/17o78t', function (data) {
+        var statusHTML = '<ul class="bulleted">';
+        $.each(data,function (index, patient) {
+          if (patient.inoffice === true) {
+            statusHTML +='<li class="in">';
+          } else {
+            statusHTML +='<li class="out">';
+          }
+          statusHTML += patient.name + '</li>';
+        });
+        statusHTML += '</ul>';
+        $('#patientList').html(statusHTML)
+      }); // end getJSON
+    }); // end ready
+    -->
+
+  </body>
+</html>

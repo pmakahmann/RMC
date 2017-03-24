@@ -1,0 +1,158 @@
+/* =================================
+  Base Element Styles
+====================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*no bullet points in list*/
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+p,
+span {
+	font-family: 'Heebo', sans-serif;
+	/*Font chosen for "throwback" visuals*/
+	font-size: 1.7em;
+}
+/*all paragraphs and spans will have same font.  Using spans for
+the "Reveal" feature in .test1questions on Test 1 page*/
+
+form {
+	font-size: 1.7em;
+}
+
+input {
+	margin: 5px auto;
+	font-size: 1.1em;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name,
+.main-nav {
+		font-size: 2em;
+}
+
+.name {
+	padding-top: 10px;
+}
+
+.name a,
+.main-nav a {
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-footer a {
+	color: white;
+}
+
+.main-header,
+.main-footer {
+	background: linear-gradient(darkgreen, transparent 90%),
+							linear-gradient(270deg, #00b300, transparent),
+							darkgreen;
+}
+
+/*creates the green gradient on header and footer to make site
+more visally appealing.  Originally started with solid darkgreen
+color, and it looked like a bad 90's website.*/
+
+.main-header {
+	font-family: 'Bungee Shade', cursive;
+	/*using .main-header class instead of .name class because it loads
+	faster in the browser.  When .name is used, the default browser
+	font can be seen momentarily.  Not sure why exactly*/
+}
+
+.main-nav a {
+	font-family: 'Orbitron', sans-serif;
+}
+
+.selected {
+	border-style: inset;
+	border-color: black;
+}
+
+.main-header a:hover,
+.main-footer a:hover {
+	color: black;
+}
+
+.main-footer {
+	padding: 1.5em 1em;
+	margin-top: auto;
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+}
+
+.main-text,
+.testQuestions,
+.calculation {
+	display: block;
+	text-align: center;
+	padding: 10px 20% 5px;
+}
+
+.questionBody {
+	margin: 0 20%;
+/*keeps the questions from scrolling on larger screens and separate
+from main-text class*/
+}
+
+/*added .test1questions to center the questions on Test 1 page without
+having it as a .main-text.  There's probably a better way to do this.
+I need to check it out later*/
+
+.submit {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: red;
+	color: white;
+	box-shadow: 0 5px 5px black;
+	width: auto;
+	height: auto;
+}
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-text {
+		padding-top: 2%;
+	}
+
+	.submit {
+		align-content: center;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+}

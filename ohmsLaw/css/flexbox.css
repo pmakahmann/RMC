@@ -1,0 +1,38 @@
+/* =================================
+Base Styles
+==================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /*creates sticky footer in conjunction with base.css .footer {margin-top = auto}*/
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header{
+    flex-direction: row;
+    justify-content: space-between;
+    /*allows separation between .name and .main-nav*/
+  }
+  .main-nav li:nth-of-type(4) {
+    margin-right: 15px;
+  }
+  /*Creates space between last nav item and right edge of viewport.
+  Would need to be altered if more nav list items are created!!*/
+}

@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+
+h2, p {
+  text-align: center;
+  padding-top: 20px;
+  margin: 10px 10%;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.7em;
+}
+/*Sticky Footer*/
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -70px;
+  /*footer height*/
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/*Navigation*/
+
+.main-header {
+  background-color: black;
+  height: 70px;
+  color: white;
+  width: 100%;
+}
+
+.main-header a:hover {
+  color: red;
+}
+
+.main-logo a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.main-logo {
+  float: left;
+  margin: 15px 0 15px 10px;
+}
+
+.main-nav a {
+  font-size: 1.7em;
+}
+
+#selected {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: -5px;
+}
+
+.main-nav li{
+  float: right;
+  list-style: none;
+  margin-top: 22px;
+  margin-right: 25px;
+}
+
+
+/*Footer*/
+
+.main-footer {
+  background-color: black;
+  height: 70px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-size: 1.5em;
+}
+
+.page-wrap:after {
+  height: 70px;
+}
+
+.main-footer a {
+  color: white;
+}
+.main-footer a:hover {
+  color: red;
+}

@@ -1,0 +1,574 @@
+/* =================================
+  Base Element Styles
+====================================*/
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 17px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*no bullet points in list*/
+}
+
+.main-body h1 {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 700;
+		font-size: 2.5em;
+}
+
+.main-body h2 {
+	font-size: 2.25em;
+}
+
+.main-body h3 {
+	font-size: 2em;
+}
+
+p {
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+	font-size: 1.7em;
+}
+
+font-family: 'Quicksand', sans-serif;
+
+
+
+/* =================================
+  Header
+====================================*/
+
+header {
+	width: 100%;
+	border-bottom: 100px;
+	margin-bottom: 10px;
+}
+
+.main-logo {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+
+/* ---- Navigation ---- */
+
+.selected {
+	text-shadow: 2px 2px 8px tomato;
+}
+
+.main-logo {
+	font-size: 2em;
+	font-family: 'Cinzel', serif;
+}
+
+.main-nav {
+	font-size: 1.5em;
+	font-family: 'Cinzel', serif;
+}
+
+.main-logo a {
+	text-align: center;
+	display: block;
+	padding: 0px 15px 10px;
+}
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+#logoBlack {
+	height: 50px;
+	width: 50px;
+	margin-right: -5px;
+}
+
+#logoWhite {
+	display: none;
+}
+
+
+
+/* =================================
+Home Page Images
+====================================*/
+
+
+
+@media (max-width: 480px) {
+.main-body img {
+	max-width: 100%;
+	margin: 20px 0;
+	}
+}
+
+.main-body img {
+	max-width: 100%;
+}
+
+#disappearDivLg {
+	display: none;
+	max-width: 100%;
+	background-image: url('../img/homepageImages/officePicLg.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	transform: translatez(0);
+}
+/*Keeps disappearing text div from displaying on smaller viewports.  Mobile first design choice.*/
+
+#disappearText {
+	display: none;
+}
+/*Keeps disappearing text from displaying on smaller viewports.  Mobile first design choice.
+Is this redundant with making the entire div disappear?  Test later.*/
+
+
+/* =================================
+Text Align
+====================================*/
+.main-body {
+	text-align: center;
+	align-content: center;
+}
+
+/* =================================
+Footer
+====================================*/
+
+.main-footer {
+	padding: .75em 1em;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 10px;
+	height: 100px;
+}
+
+.main-footer p {
+	margin-top: 7px;
+	font-size: 1.2em;
+}
+
+.social-icon {
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.main-footer img:hover {
+		transform: scale(1.5);
+}
+
+
+
+
+/* =================================
+webDeveloper.html Styling
+====================================*/
+
+
+
+#webDevSites ul{
+	align-content: center;
+}
+
+#webDevSites li{
+	display: inline-block;
+	align-self: center;
+	margin: 10px 25px 15px;
+}
+
+
+
+
+/* =================================
+games.html Styling
+====================================*/
+
+
+
+
+#seansButton {
+	color: black;
+	display: block;
+	align-self: center;
+	background-color: red;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 4px;
+	padding: 5px;
+	height: 30px;
+	width: 130px;
+	/*finish styling later*/
+}
+
+#seansButton:hover {
+	  font-family: 'Nosifer', cursive;
+}
+
+
+
+
+
+/* =================================
+intelligentMachinery.html Styling
+====================================*/
+
+
+.col span {
+	font-size: 2.5em;
+}
+
+.IMBody {
+	background-image: url("../img/techBackground.jpg");
+	background-size: cover;
+	padding-top: 20px;
+}
+
+.IMBody h1,
+.IMBody h2,
+.IMBody h3,
+.IMBody p,
+.IMBody li,
+.IMBody a,
+.IMBody span {
+	color: white;
+}
+
+#IMText {
+	background: rgba (255, 255, 255, .5);
+}
+
+#IMPageNav {
+	color: white;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #222;
+}
+
+#IMPageNav li,
+#IMPageNav a {
+	display: inline-block;
+	padding: 5px 5px 10px;
+	color: white;
+	font-size: 22px;
+}
+
+.IMBody span {
+	font-size: 1.5em;
+	color: #3192fb;
+	background-color: black;
+}
+
+.IMBody div {
+	margin-top: 50px;
+}
+
+#IMScoreLinks li {
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: 10px;
+}
+
+#IMPageNav li:hover,
+#IMScoreLinks li:hover {
+	transform: scale(1.1);
+}
+
+#IMScoreLinks a {
+	color: white;
+	background-color: #3192fb;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+iframe {
+	margin-bottom: 20px;
+}
+
+
+
+/* =================================
+performingMusician.html Styling
+====================================*/
+
+
+
+#musician-header h1 {
+	text-decoration: underline;
+	font-family: 'Cinzel', serif;
+}
+
+video {
+	width: 100%;
+	max-width: 608px;
+	max-height: 360px;
+}
+
+
+
+
+/* =================================
+theorist.html Styling
+====================================*/
+
+
+
+.theorist-body h1:first-of-type {
+	padding-top: 20px;
+}
+
+.theorist-body h1 {
+	padding-top: 40px;
+}
+
+.theorist-body img {
+	max-width: 500px;
+	align-self: center;
+}
+
+#juniperSuiteButton {
+	padding: 5px 10px;
+	color: white;
+	background-color: red;
+	border-radius: 5px;
+}
+
+
+
+
+/* =================================
+  Color Palette
+#2834be
+#5F9DA1
+#73AFB6
+#A79E65
+#E2D893
+#2B2301
+====================================*/
+
+
+
+
+header {
+		background: linear-gradient(#2834be, transparent 95%),
+								linear-gradient(180deg, #111, transparent);
+		border-top: 3px solid #111;
+	}
+
+
+.main-body h1,
+.main-body a {
+	color: #5F9DA1;
+}
+
+.main-logo a,
+.main-nav a,
+.main-footer a,
+.main-footer {
+		color: black;
+}
+
+.main-body a:hover,
+.full-span-text h1:hover,
+.photo-boxes h1:hover
+.theorist-body h1:hover {
+	color: #2834be;
+}
+
+.main-header a:hover,
+.main-nav a:hover,
+.main-footer a:hover {
+	color: #ccc;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+				text-shadow: 0 0 8px black;
+}
+
+.main-footer {
+	background: linear-gradient(#2834be, transparent 95%),
+							linear-gradient(180deg, #111, transparent);
+	border-top: 3px solid #111;
+}
+
+/*The next two create a lightly visible border around the photo boxes segments to improve separation and clarity for the viewer*/
+.photo-boxes {
+	border-top: 3px solid #eee;
+}
+
+.boxL img{
+		border-right: 3px solid #eee;
+}
+
+#musician-header h1 {
+	color: black;
+}
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 786px) {
+	header {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	#logoBlack {
+		display: none;
+	}
+
+	#logoWhite {
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		margin-right: -5px;
+	}
+
+	.selected {
+		text-shadow: 2px 2px 8px #000;
+	}
+
+	.full-span-text p {
+		padding: 0 20% 40px;
+	}
+
+  .photo-boxes img {
+    width: 50%;
+		height: 400px;
+  }
+
+
+	.boxNav img {
+		height: 40px;
+		width: 40px;
+	}
+
+	#disappearDivSm {
+		display: none;
+	}
+
+	#disappearDiv {
+		display: inline-block;
+		width: 100vw;
+		height: 300px;
+		margin: 0;
+		background-image: url('../img/homepageImages/officePicLg.jpg');
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		transform: translatez(0);
+	}
+
+	#disappearText {
+		display: inline-block;
+		margin: 0;
+		padding: 10px 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 40px;
+		transform: translate3d(0,0,0);
+	}
+
+	.main-logo a,
+	.main-nav a,
+	.main-footer a,
+	.main-footer {
+			color: white;
+	}
+
+	#musician-header h1 {
+		padding: 0 10% 20px;
+	}
+
+.IMBody h2,
+.IMBody h3,
+.IMBody p {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#IMPageNav {
+	border: none;
+	height: 60px;
+}
+
+#IMPageNav li,
+#IMPageNav a {
+	color: black;
+	background-color: white;
+	margin-top: 9px;
+	padding: 0 25px 3px;
+}
+
+#IMPageNav li:first-of-type {
+	border-radius: 15px 0 0 15px;
+}
+
+#IMPageNav li:last-of-type {
+	border-radius: 0 15px 15px 0;
+
+}
+
+#game-body {
+	margin-bottom: 215px;
+}
+} /*end media min-width 800px*/
+
+@media (min-width: 1298px) {
+
+
+	.main-nav {
+		margin-top: 15px;
+	}
+
+	.photo-boxes img {
+		height: 550px;
+	}
+
+	#disappearDiv {
+		height: 450px;
+	}
+
+	#disappearText {
+		font-size: 50px;
+	}
+
+	#webDevSites {
+		padding: 0 20%;
+	}
+
+	iframe {
+		align-self: center;
+	}
+
+	#game-body {
+		margin-bottom: 200px;
+	}
+}
