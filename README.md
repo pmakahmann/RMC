@@ -1,3 +1,11 @@
+** Attention Code Louisville Reviewer **
+
+I have used jQuery as an AJAX example (borrowing styling from Treehouse) in the ajaxSample folder (the JSON file is hosted at myjson.com).  I also used jQuery in the ohmsLaw folder for the self test pages (testI.html, testR.html, and testV.html).
+
+I used the Foundation Framework in the gryphonFoundation page.
+
+You can navigate to these from the webDeveloper.html page, or by navigating to that page from the index.html. Or you can just look in the respective folders.
+
 About:
 
 Welcome to the RogueMiddleChild.com Repository.  I have designed this website as an introductory portal into my current progress as Web Designer, as well as a short showcase of my work as a musician, composer, and theorist over the last 18 years.
